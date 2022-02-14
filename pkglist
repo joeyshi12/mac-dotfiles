@@ -1,5 +1,4 @@
 aom
-assimp
 bdw-gc
 boost
 brotli
@@ -12,11 +11,9 @@ cmake
 cmatrix
 cmocka
 dav1d
-dbus
 dcraw
 docbook
 docbook-xsl
-double-conversion
 ffmpeg
 flac
 fontconfig
@@ -37,8 +34,8 @@ gobject-introspection
 graphite2
 guile
 harfbuzz
+htop
 http-server
-hunspell
 icu4c
 imagemagick
 imath
@@ -98,7 +95,6 @@ lz4
 lzo
 m4
 mbedtls
-md4c
 mpdecimal
 mpfr
 msgpack
@@ -124,7 +120,7 @@ powerlevel10k
 python-tk@3.9
 python@3.10
 python@3.9
-qt
+qt@5
 ranger
 rav1e
 readline
@@ -158,8 +154,8 @@ yarn
 zbar
 zeromq
 zimg
-zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
 zstd
 obsidian
+pycharm
