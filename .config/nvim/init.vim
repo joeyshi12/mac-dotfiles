@@ -37,7 +37,7 @@ let delimitMate_expand_cr = 2 " Expand inside brackets
 
 " LSP
 let g:ale_disable_lsp = 1
-let g:coc_node_path = '~/.nvm/versions/node/v17.1.0/bin/node'
+let g:coc_node_path = '~/.nvm/versions/node/v17.7.0/bin/node'
 let g:coc_disable_transparent_cursor = 1
 if $CONDA_PREFIX == ""
   let s:current_python_path=$CONDA_PYTHON_EXE
