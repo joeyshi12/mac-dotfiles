@@ -5,10 +5,11 @@ dir="$HOME/dotfiles"
 dotfiles=(
     ".config/nvim"
     ".config/ranger"
+    ".config/tmux"
+    ".config/pylintrc"
+    ".zprofile"
     ".zshrc"
     ".zsh_aliases"
-    ".tmux.conf"
-    ".pylintrc"
 )
 
 for file in "${dotfiles[@]}"; do

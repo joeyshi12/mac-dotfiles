@@ -4,46 +4,33 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
-autoload -Uz compinit && compinit
 
-set -o vi
-bindkey -M viins '^?' backward-delete-char
-bindkey -M viins '^H' backward-delete-char
-export VISUAL=nvim
-export EDITOR="$VISUAL"
+HISTSIZE=2000
+SAVEHIST=2000
+HISTFILE="$XDG_DATA_HOME/zhistory"
 
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
-compinit
+compinit -d "$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
 _comp_options+=(globdots)		# Include hidden files.
 
-# Use vim keys in tab complete menu:
+# Vim-like key-bindings
+set -o vi
+bindkey -M viins '^?' backward-delete-char
+bindkey -M viins '^H' backward-delete-char
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
 
-# Command history
-export HISTFILE=~/.zsh_history
-export HISTSIZE=1000
-export SAVEHIST=1000
+[ -f ~/.zsh_aliases ] && source ~/.zsh_aliases
+[ -f ~/.p10k.zsh ] && source ~/.p10k.zsh # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# set PATH so it includes user's private bin if it exists
-if [ -d ~/.local/bin ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
-# Alias definitions
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
-fi
-
-export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
@@ -61,7 +48,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
