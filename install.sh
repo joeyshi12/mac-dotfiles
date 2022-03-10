@@ -9,7 +9,7 @@ dotfiles=(
     ".config/pylintrc"
     ".zprofile"
     ".zshrc"
-    ".zsh_aliases"
+    ".aliases.zsh"
 )
 
 for file in "${dotfiles[@]}"; do

@@ -10,6 +10,7 @@ ccls
 cjson
 clisp
 cmake
+cmake-docs
 cmatrix
 cmocka
 dav1d
@@ -31,13 +32,11 @@ ghostscript
 giflib
 git
 glib
-gmime
 gmp
 gnu-getopt
 gnupg
 gnutls
 gobject-introspection
-gpgme
 graphite2
 guile
 harfbuzz
@@ -105,7 +104,6 @@ libxft
 libxrender
 little-cms2
 llvm
-lmdb
 lua
 luajit-openresty
 luv
@@ -121,9 +119,9 @@ neofetch
 neovim
 nettle
 node
-notmuch
 npth
 nvm
+openblas
 opencore-amr
 openexr
 openjdk
@@ -146,7 +144,7 @@ pstoedit
 python-tk@3.9
 python@3.10
 python@3.9
-qt@5
+r
 ranger
 rav1e
 readline
@@ -161,13 +159,11 @@ source-highlight
 speex
 sqlite
 srt
-talloc
 tcl-tk
 tesseract
 texlive
 theora
 tmux
-tokyo-cabinet
 tree-sitter
 ufraw
 unbound
@@ -175,9 +171,9 @@ unibilium
 utf8proc
 w3m
 webp
+wget
 x264
 x265
-xapian
 xmlto
 xorgproto
 xvid
@@ -193,3 +189,4 @@ inkscape
 mathpix-snipping-tool
 obsidian
 pycharm
+rstudio
