@@ -8,7 +8,7 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 HISTSIZE=2000
 SAVEHIST=2000
-HISTFILE="$XDG_DATA_HOME/zhistory"
+HISTFILE="$XDG_DATA_HOME/zsh_history"
 
 # Basic auto/tab complete:
 autoload -U compinit
