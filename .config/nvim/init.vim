@@ -73,6 +73,10 @@ nmap <leader>gd <Plug>(coc-definition)
 nmap ghp <Plug>(coc-git-chunkinfo)
 nmap ghu :CocCommand git.chunkUndo<CR>
 
+" https://vi.stackexchange.com/questions/343/how-to-edit-binary-files-with-vim
+nmap <Leader>hr :%!xxd<CR> :set filetype=xxd<CR>
+nmap <Leader>hw :%!xxd -r<CR> :set binary<CR> :set filetype=<CR>
+
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
