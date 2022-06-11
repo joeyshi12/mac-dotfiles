@@ -29,13 +29,6 @@ crun() {
     gcc $1 && ./a.out && rm a.out
 }
 
-# Runs fzf and opens selected file in nvim
-# $1 path to selected file
-se() {
-    local file=$(fzf --preview 'cat {}')
-    [ -z $file ] || nvim $file
-}
-
 # Runs ranger and changes user to current ranger directory on quit
 r() {
     local target=~/.cache/ranger/rangerdir

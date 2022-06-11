@@ -25,5 +25,4 @@
     "python.pythonPath": "~/miniconda3/bin/python",
     "npm.binPath": "~/.nvm/versions/node/v17.7.0/bin/npm",
     "diagnostic.displayByAle": true,
-    "coc.preferences.jumpCommand": "tabe"
 }
