@@ -71,8 +71,12 @@ brew "nmap"
 brew "nvm"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# Python package management tool
+brew "poetry"
 # Convert bitmaps to vector graphics
 brew "potrace"
+# It's not just a linter that annoys you!
+brew "pylint"
 # Python interface to Tcl/Tk
 brew "python-tk@3.9"
 # Software environment for statistical computing
@@ -83,6 +87,8 @@ brew "ranger"
 brew "source-highlight"
 # Free software distribution for the TeX typesetting system
 brew "texlive"
+# Simplified and community-driven man pages
+brew "tldr"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)

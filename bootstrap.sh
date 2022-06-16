@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-dotfiles=(
+DOTFILES=(
     ".config/nvim"
     ".config/ranger"
     ".config/tmux"
@@ -9,6 +9,6 @@ dotfiles=(
     ".zshrc"
 )
 
-for file in "${dotfiles[@]}"; do
+for file in "${DOTFILES[@]}"; do
     ln -sfn "${0:a:h}/$file" "$HOME/$file"
 done

@@ -22,7 +22,7 @@
             }
         }
     },
-    "python.pythonPath": "~/miniconda3/bin/python",
+    "python.pythonPath": "~/Workspace/neural-net-classifier/venv/bin/python",
     "npm.binPath": "~/.nvm/versions/node/v17.7.0/bin/npm",
-    "diagnostic.displayByAle": true,
+    "diagnostic.displayByAle": true
 }
