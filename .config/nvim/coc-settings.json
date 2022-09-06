@@ -22,7 +22,8 @@
             }
         }
     },
-    "python.pythonPath": "~/Workspace/neural-net-classifier/venv/bin/python",
+    "python.pythonPath": "/usr/bin/python3",
     "npm.binPath": "~/.nvm/versions/node/v17.7.0/bin/npm",
-    "diagnostic.displayByAle": true
+    "diagnostic.displayByAle": true,
+    "suggest.noselect": false
 }
