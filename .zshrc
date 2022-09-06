@@ -27,10 +27,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 [ -f ~/.p10k.zsh ] && source ~/.p10k.zsh # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [ -f ~/.dotfiles/.aliases.zsh ] && source ~/.dotfiles/.aliases.zsh
+[ -f ~/.dotfiles/.fzf.zsh ] && source ~/.dotfiles/.fzf.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-source /opt/homebrew/Cellar/fzf/0.32.1/shell/completion.zsh
-source /opt/homebrew/Cellar/fzf/0.32.1/shell/key-bindings.zsh
 
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
