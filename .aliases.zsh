@@ -5,6 +5,7 @@ alias sv='sudo -E nvim'
 
 alias ga='git add'
 alias gaa='git add --all'
+alias grm='git rm --cached'
 alias gb='git branch'
 alias gc='git commit -vm'
 alias gca='git commit -vam'

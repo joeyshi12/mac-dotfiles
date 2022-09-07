@@ -12,7 +12,7 @@ map X !$f
 cmd open ${{
     test -L $f && f=$(readlink -f $f)
     case $(file --mime-type $f -b) in
-        text/*) $EDITOR $fx;;
+        text/*|application/json) $EDITOR $fx;;
         *) open $fx;;
     esac
 }}

@@ -54,12 +54,14 @@ set smartindent
 set cindent
 
 " Mappings
-nnoremap <C-n> :tabn<CR>
-nnoremap <C-p> :tabp<CR>
-nnoremap <C-\> :NERDTreeToggle<CR>
+nnoremap <C-n> <cmd>tabn<CR>
+nnoremap <C-p> <cmd>tabp<CR>
+nnoremap <C-\> <cmd>NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 vnoremap <C-c> "+y
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" nmap is here to avoid overwriting the delimitMate mapping
+nmap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+nnoremap <leader>fj <cmd>%!python -m json.tool<cr>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
@@ -69,7 +71,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>rn <Plug>(coc-rename)
 nnoremap <leader>gd <Plug>(coc-definition)
 nnoremap ghp <Plug>(coc-git-chunkinfo)
-nnoremap ghu :CocCommand git.chunkUndo<CR>
+nnoremap ghu <cmd>CocCommand git.chunkUndo<CR>
 
 " Autocommands
 fun! TrimWhitespace()
