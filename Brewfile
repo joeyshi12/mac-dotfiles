@@ -3,119 +3,74 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
-# Image manipulation library
-brew "jpeg"
-# GNU binary tools for native development
-brew "binutils"
-# Portable Foreign Function Interface library
-brew "libffi"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Core application library for C
+tap "zegervdv/zathura"
 brew "glib"
-# Manage compile and link flags for libraries
+brew "libffi"
 brew "pkg-config"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# C/C++/ObjC language server
-brew "ccls"
-# Cross-platform make
-brew "cmake"
-# Documentation for CMake
-brew "cmake-docs"
-# Console Matrix
-brew "cmatrix"
-# Perl lib for reading and writing EXIF metadata
-brew "exiftool"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
-# Command-line fuzzy finder written in Go
-brew "fzf"
-# GNU compiler collection
-brew "gcc"
-# Distributed revision control system
-brew "git"
-# GNU Pretty Good Privacy (PGP) package
-brew "gnupg"
-# Improved top (interactive process viewer)
-brew "htop"
-# Platform built on V8 to build network applications
-brew "node"
-# Simple zero-configuration command-line HTTP server
-brew "http-server"
-# Database of common MIME types
-brew "shared-mime-info"
-# Tools and libraries to manipulate images in many formats
-brew "imagemagick"
-# JPEG image codec that aids compression and decompression
+brew "python@3.9"
 brew "jpeg-turbo"
-# Minify JavaScript code
+brew "harfbuzz"
+brew "jpeg"
+brew "pango"
+brew "binutils"
+brew "ccls"
+brew "cmake"
+brew "cmake-docs"
+brew "cmatrix"
+brew "exiftool"
+brew "tesseract"
+brew "ffmpeg"
+brew "fzf"
+brew "gcc"
+brew "git"
+brew "git-lfs"
+brew "gnupg"
+brew "htop"
+brew "node"
+brew "http-server"
+brew "shared-mime-info"
+brew "imagemagick"
 brew "jsmin"
-# Interactive environments for writing and running code
 brew "jupyterlab"
-# High fidelity 2D graphics library for C++
 brew "libagg"
-# Modern programming language in the Lisp/Scheme family
+brew "libnotify"
 brew "minimal-racket"
-# Fast, highly customisable system info script
 brew "neofetch"
-# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Utility for managing network connections
 brew "netcat"
-# Port scanning utility for large networks
 brew "nmap"
-# Manage multiple Node.js versions
 brew "nvm"
-# Cryptography and SSL/TLS Toolkit
+brew "openjdk"
+brew "openjdk@11"
 brew "openssl@3"
-# Python package management tool
 brew "poetry"
-# Convert bitmaps to vector graphics
+brew "poppler"
 brew "potrace"
-# It's not just a linter that annoys you!
 brew "pylint"
-# Python interface to Tcl/Tk
+brew "pyqt@5"
 brew "python-tk@3.9"
-# Software environment for statistical computing
 brew "r"
-# File browser
 brew "ranger"
-# Source-code syntax highlighter
 brew "source-highlight"
-# Free software distribution for the TeX typesetting system
+brew "texlab"
 brew "texlive"
-# Simplified and community-driven man pages
 brew "tldr"
-# Terminal multiplexer
 brew "tmux"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Pager/text based browser
 brew "w3m"
-# Internet file retriever
 brew "wget"
-# JavaScript package manager
 brew "yarn"
-# Suite of barcodes-reading tools
 brew "zbar"
-# Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
-# Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
-# Installer for BetterDiscord
+brew "zegervdv/zathura/girara", link: false
+brew "zegervdv/zathura/zathura", args: ["HEAD", "with-synctex"]
+brew "zegervdv/zathura/zathura-pdf-poppler"
 cask "betterdiscord-installer"
-# Vector graphics editor
+cask "blender"
 cask "inkscape"
-# Scanner app for math and science
 cask "mathpix-snipping-tool"
-# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# IDE for professional Python development
 cask "pycharm"
-# Network protocol analyzer
 cask "wireshark"

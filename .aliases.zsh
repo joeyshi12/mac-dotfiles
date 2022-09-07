@@ -29,9 +29,10 @@ crun() {
     gcc "$1" && ./a.out "${@:2}" && rm a.out
 }
 
-# Runs ranger and changes user to current ranger directory on quit
-r() {
-    local target=~/.cache/ranger/rangerdir
-    ranger --choosedir=$target
+# Runs lf and changes user to current lf directory on quit
+lf() {
+    local target=~/.cache/lf/lfdir
+    /opt/homebrew/bin/lf -last-dir-path $target
     cd "$(cat $target)"
+    clear
 }

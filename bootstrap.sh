@@ -2,7 +2,7 @@
 
 DOTFILES=(
     ".config/nvim"
-    ".config/ranger"
+    ".config/lf"
     ".config/tmux"
     ".config/pylintrc"
     ".zprofile"
