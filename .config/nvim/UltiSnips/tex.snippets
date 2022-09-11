@@ -74,7 +74,11 @@ snippet fig "Figure environment" b
 \end{figure}
 endsnippet
 
-snippet frac "Fraction" w
+snippet set "set" w
+\\{$1\\} $0
+endsnippet
+
+snippet frac "fraction" w
 \frac{$1}{$2}$0
 endsnippet
 
@@ -90,16 +94,20 @@ snippet lim "limit" w
 \lim_{${1:n} \to ${2:\infty}}
 endsnippet
 
-snippet pmat "Pmat" w
+snippet pmat "pmat" w
 \begin{pmatrix} $1 \end{pmatrix} $0
 endsnippet
 
-snippet bmat "Bmat" w
+snippet bmat "bmat" w
 \begin{bmatrix} $1 \end{bmatrix} $0
 endsnippet
 
 snippet lr "left( right)" i
 \left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet lr| "left| right|" i
+\left| ${1:${VISUAL}} \right| $0
 endsnippet
 
 snippet sympy "sympyblock " w

@@ -15,6 +15,9 @@ PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
+export PATH="/opt/homebrew/opt/pyqt@5/5.15.4_1/bin:$PATH"
+
 export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/binutils/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/binutils/include"
