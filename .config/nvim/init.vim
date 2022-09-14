@@ -59,8 +59,7 @@ nnoremap <C-p> <cmd>tabp<CR>
 nnoremap <C-\> <cmd>NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 vnoremap <C-c> "+y
-" nmap is here to avoid overwriting the delimitMate mapping
-nmap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <leader>fj <cmd>%!python -m json.tool<cr>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
