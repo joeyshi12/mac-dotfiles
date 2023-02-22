@@ -7,6 +7,7 @@ alias ga='git add'
 alias gaa='git add --all'
 alias grm='git rm --cached'
 alias gb='git branch'
+alias gba='git branch --all'
 alias gc='git commit -vm'
 alias gca='git commit -vam'
 alias gcl='git clone --recurse-submodules'
@@ -36,5 +37,4 @@ lf() {
     local target=~/.cache/lf/lfdir
     /opt/homebrew/bin/lf -last-dir-path $target
     cd "$(cat $target)"
-    clear
 }

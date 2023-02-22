@@ -12,6 +12,8 @@ Plug 'SirVer/ultisnips'
     let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 Plug 'Raimondi/delimitMate'
     let delimitMate_expand_cr = 2 " Expand inside brackets
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-surround'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'lervag/vimtex', {'tag': 'v1.6'}
@@ -59,8 +61,8 @@ nnoremap <C-p> <cmd>tabp<CR>
 nnoremap <C-\> <cmd>NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 vnoremap <C-c> "+y
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
-nnoremap <leader>fj <cmd>%!python -m json.tool<cr>
+"inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+nnoremap <leader>fj <cmd>%!python3 -m json.tool<cr>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>

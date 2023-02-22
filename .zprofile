@@ -10,14 +10,13 @@ export NODE_REPL_HISTORY="${XDG_DATA_HOME}/node_repl_history"
 export SQLITE_HISTORY="${XDG_DATA_HOME}/sqlite_history"
 export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
 
-PATH="${HOME}/.local/bin:${PATH}"
-PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
-export PATH="/opt/homebrew/opt/pyqt@5/5.15.4_1/bin:$PATH"
+PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+PATH="/opt/homebrew/opt/qt@5/bin:$PATH"
+PATH="/opt/homebrew/opt/pyqt@5/5.15.4_1/bin:$PATH"
+PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+PATH="${HOME}/.local/bin:${PATH}"
 
-export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/binutils/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/binutils/include"

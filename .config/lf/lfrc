@@ -2,6 +2,8 @@ set shell sh
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10
+set info size:time
+set hidden!
 
 map <enter> shell
 
@@ -52,7 +54,7 @@ map R bulkrename
 
 # define a custom 'delete' command
 cmd delete ${{
-	clear; tput cup $(($(tput lines)/4))
+#clear; tput cup $(($(tput lines)/4))
 	set -f
 	printf "%s\n\t" "$fx"
 	printf "delete? [y/N] "
