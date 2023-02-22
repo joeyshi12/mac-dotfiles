@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+import requests
+from bs4 import BeautifulSoup
+
+base_url = "https://gogoanime.bid"
+
+def main():
+    response = requests.get(base_url, timeout=4)
+    if response.status_code != 200:
+        print(f"Failed to fetch from {base_url}")
+        return
+
+    soup = BeautifulSoup(response.text, features="html.parser")
+    releases_element = soup.find_all(id="load_recent_release")
+    if len(releases_element) == 0:
+        print("Failed to find releases")
+        return
+
+    for release in releases_element[0].find_all(["li"]):
+        for name_element in release.find_all(class_="name"):
+            for ref in name_element.find_all(["a"]):
+                title = ref.get("title")
+                href = ref.get("href")
+                print(f"{title:<60}{base_url}{href}")
+
+if __name__ == "__main__":
+    main()

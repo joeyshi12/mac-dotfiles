@@ -1,30 +1,31 @@
-alias ls='ls -G'
-alias grep='grep --color=auto'
-alias v='nvim'
-alias sv='sudo -E nvim'
+alias ls="ls -G"
+alias grep="grep --color=auto"
+alias v="nvim"
+alias sv="sudo -E nvim"
+alias m="neomutt"
 
-alias ga='git add'
-alias gaa='git add --all'
-alias grm='git rm --cached'
-alias gb='git branch'
-alias gba='git branch --all'
-alias gc='git commit -vm'
-alias gca='git commit -vam'
-alias gcl='git clone --recurse-submodules'
-alias gl='git pull'
-alias gup='git pull --rebase'
-alias gp='git push'
-alias gf='git fetch'
-alias gco='git checkout'
-alias gst='git status'
-alias gd='git diff'
-alias gdc='git diff --cached'
-alias glg='git log --graph'
+alias ga="git add"
+alias gaa="git add --all"
+alias grm="git rm --cached"
+alias gb="git branch"
+alias gba="git branch --all"
+alias gc="git commit -vm"
+alias gca="git commit -vam"
+alias gcl="git clone --recurse-submodules"
+alias gl="git pull"
+alias gup="git pull --rebase"
+alias gp="git push"
+alias gf="git fetch"
+alias gco="git checkout"
+alias gst="git status"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias glg="git log --graph"
 
-alias t='tmux'
-alias ta='tmux attach-session'
-alias tl='tmux list-sessions'
-alias tk='tmux kill-session'
+alias t="tmux"
+alias ta="tmux attach-session"
+alias tl="tmux list-sessions"
+alias tk="tmux kill-session"
 
 # Compiles and executes C file and removes binary
 # $1 path to the C file
