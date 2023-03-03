@@ -24,3 +24,7 @@ git clone git@github.com:joeyshi12/mac-dotfiles ~/.dotfiles
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle --file ~/.dotfiles/Brewfile
 ```
+
+## Notes
+
+- Export packages with `brew bundle dump --force`
