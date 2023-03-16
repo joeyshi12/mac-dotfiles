@@ -38,7 +38,7 @@ brew "gnupg"
 brew "openjdk"
 brew "gradle"
 brew "graphviz"
-brew "gtk+3", link: false
+brew "gtk+3"
 brew "htop"
 brew "node"
 brew "http-server"

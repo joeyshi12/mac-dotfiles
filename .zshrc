@@ -7,13 +7,13 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 HISTSIZE=2000
 SAVEHIST=2000
-HISTFILE="$XDG_DATA_HOME/zsh_history"
+HISTFILE="${XDG_DATA_HOME}/zsh_history"
 
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
-compinit -d "$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
+compinit -d "${HOME}/.cache/zsh/zcompdump-${ZSH_VERSION}"
 _comp_options+=(globdots)		# Include hidden files.
 
 # Vim-like key-bindings
@@ -25,7 +25,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
-[ -f ~/.p10k.zsh ] && source ~/.p10k.zsh # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[ -f ~/.dotfiles/.p10k.zsh ] && source ~/.dotfiles/.p10k.zsh # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [ -f ~/.dotfiles/.aliases.zsh ] && source ~/.dotfiles/.aliases.zsh
 [ -f ~/.dotfiles/.fzf.zsh ] && source ~/.dotfiles/.fzf.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
