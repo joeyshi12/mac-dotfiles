@@ -11,6 +11,8 @@ map <enter> shell
 map x $$f
 map X !$f
 
+map o open
+
 cmd open ${{
     test -L $f && f=$(readlink -f $f)
     case $(file --mime-type $f -b) in
@@ -18,7 +20,6 @@ cmd open ${{
         *) open $fx;;
     esac
 }}
-map o open
 
 # define a custom 'rename' command without prompt for overwrite
 cmd rename %mv $f $1

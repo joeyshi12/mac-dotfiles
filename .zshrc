@@ -18,7 +18,6 @@ SAVEHIST=10000
 HISTFILE="${XDG_CACHE_HOME}/zsh_history"
 NODE_REPL_HISTORY="${XDG_CACHE_HOME}/node_repl_history"
 SQLITE_HISTORY="${XDG_CACHE_HOME}/sqlite_history"
-TLDR_CACHE_DIR="${XDG_CACHE_HOME}"
 
 # Vim-like key-bindings
 set -o vi
