@@ -35,7 +35,8 @@ crun() {
 
 # Runs lf and changes user to current lf directory on quit
 lf() {
-    local target=~/.cache/lf/lfdir
+    [ ! -d "${XDG_CACHE_HOME}/lf" ] && mkdir -p "${XDG_CACHE_HOME}/lf"
+    local target="${XDG_CACHE_HOME}/lf/lfdir"
     /opt/homebrew/bin/lf -last-dir-path $target
     cd "$(cat $target)"
 }

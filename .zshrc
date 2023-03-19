@@ -5,16 +5,20 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
-HISTSIZE=2000
-SAVEHIST=2000
-HISTFILE="${XDG_DATA_HOME}/zsh_history"
-
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit -d "${HOME}/.cache/zsh/zcompdump-${ZSH_VERSION}"
 _comp_options+=(globdots)		# Include hidden files.
+
+# History files in cache
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE="${XDG_CACHE_HOME}/zsh_history"
+NODE_REPL_HISTORY="${XDG_CACHE_HOME}/node_repl_history"
+SQLITE_HISTORY="${XDG_CACHE_HOME}/sqlite_history"
+TLDR_CACHE_DIR="${XDG_CACHE_HOME}"
 
 # Vim-like key-bindings
 set -o vi

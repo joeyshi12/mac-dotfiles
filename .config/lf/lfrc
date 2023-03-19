@@ -4,6 +4,7 @@ set ifs "\n"
 set scrolloff 10
 set info size:time
 set hidden!
+set previewer ~/.config/lf/scope
 
 map <enter> shell
 
