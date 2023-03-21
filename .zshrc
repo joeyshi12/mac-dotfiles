@@ -10,7 +10,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit -d "${HOME}/.cache/zsh/zcompdump-${ZSH_VERSION}"
-_comp_options+=(globdots)		# Include hidden files.
+_comp_options+=(globdots)  # Include hidden files.
 
 # History files in cache
 HISTSIZE=10000
@@ -28,10 +28,9 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
-[ -f ~/.dotfiles/.p10k.zsh ] && source ~/.dotfiles/.p10k.zsh # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[ -f ~/.dotfiles/.aliases.zsh ] && source ~/.dotfiles/.aliases.zsh
-[ -f ~/.dotfiles/.fzf.zsh ] && source ~/.dotfiles/.fzf.zsh
+source ~/.dotfiles/.p10k.zsh  # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source ~/.dotfiles/.aliases.zsh
+source ~/.dotfiles/.fzf.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+source /opt/homebrew/opt/nvm/nvm.sh  # This loads nvm

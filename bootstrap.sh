@@ -1,13 +1,11 @@
 #!/bin/zsh
 
 DOTFILES="${HOME}/.dotfiles"
+cd "${DOTFILES}"
 
 [ ! -d "${HOME}/.config" ] && mkdir -p "${HOME}/.config"
-for file in $(ls "${DOTFILES}/.config"); do
-    ln -sfn "${DOTFILES}/.config/${file}" "$HOME/.config/${file}"
-done
-
 [ ! -d "${HOME}/.local/bin" ] && mkdir -p "${HOME}/.local/bin"
-for file in $(ls "${DOTFILES}/.local/bin"); do
-    ln -sfn "${DOTFILES}/.local/bin/${file}" "$HOME/.local/bin/${file}"
+
+for file in .config/* .local/bin/* .zshrc .zprofile; do
+    ln -sfn "${DOTFILES}/${file}" "${HOME}/${file}"
 done
