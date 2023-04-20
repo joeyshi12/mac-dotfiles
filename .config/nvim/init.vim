@@ -28,6 +28,9 @@ Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
     let g:lightline = {'colorscheme': 'catppuccin'}
+Plug 'preservim/vim-markdown'
+    let g:vim_markdown_folding_disabled = 1
+    let g:vim_markdown_math = 1
 call plug#end()
 
 " General
@@ -63,6 +66,7 @@ inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 vnoremap <C-c> "+y
 "inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 nnoremap <leader>fj <cmd>%!python3 -m json.tool<cr>
+nnoremap <leader>ft <cmd>TableFormat<cr>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
