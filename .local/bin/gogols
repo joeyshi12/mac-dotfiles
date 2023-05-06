@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-base_url = "https://gogoanime.bid"
+base_url = "https://gogoanime.cl"
 
 def main():
     response = requests.get(base_url, timeout=4)
@@ -21,7 +21,9 @@ def main():
             for ref in name_element.find_all(["a"]):
                 title = ref.get("title")
                 href = ref.get("href")
-                print(f"{title:<60}{base_url}{href}")
+                if len(title) > 50:
+                    title = title[:50] + "..."
+                print(f"{title:<55}{base_url}{href}")
 
 if __name__ == "__main__":
     main()

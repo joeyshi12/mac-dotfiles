@@ -6,3 +6,6 @@ __pycache__/
 
 # nvim plugins
 plugged/
+
+# tmux plugins
+plugins/

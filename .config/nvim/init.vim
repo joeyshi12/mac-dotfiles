@@ -24,10 +24,10 @@ Plug 'lervag/vimtex', {'tag': 'v1.6'}
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
     set conceallevel=2
     let g:tex_conceal = 'abdmg'
-Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+Plug 'arcticicestudio/nord-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
-    let g:lightline = {'colorscheme': 'catppuccin'}
+    let g:lightline = {'colorscheme': 'nord'}
 Plug 'preservim/vim-markdown'
     let g:vim_markdown_folding_disabled = 1
     let g:vim_markdown_math = 1
@@ -46,7 +46,7 @@ set number
 set splitbelow splitright
 set pumheight=15
 set signcolumn=yes
-colorscheme catppuccin
+colorscheme nord
 
 " Indenting
 set indentexpr="" " disable auto-inserting tabs

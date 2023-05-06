@@ -21,4 +21,4 @@ PATH="${HOME}/.local/bin:${PATH}"
 
 export LDFLAGS="-L/opt/homebrew/opt/binutils/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/binutils/include"
-export BAT_THEME="Catppuccin-mocha"
+export BAT_THEME="Nord"
