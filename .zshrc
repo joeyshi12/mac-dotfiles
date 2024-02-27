@@ -33,4 +33,14 @@ source ~/.dotfiles/.aliases.zsh
 source ~/.dotfiles/.fzf.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/opt/nvm/nvm.sh  # This loads nvm
+
+export NVM_DIR="${XDG_DATA_HOME}/nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/Users/joeyshi/.bun/_bun" ] && source "/Users/joeyshi/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

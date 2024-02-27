@@ -4,6 +4,7 @@ alias v="nvim"
 alias sv="sudo -E nvim"
 alias m="neomutt"
 
+# Git
 alias ga="git add"
 alias gaa="git add --all"
 alias grm="git rm --cached"
@@ -22,10 +23,28 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 alias glg="git log --graph"
 
-alias t="tmux"
-alias ta="tmux attach-session"
-alias tl="tmux list-sessions"
-alias tk="tmux kill-session"
+# Docker
+alias dc='docker-compose'
+alias dim='docker image'
+alias drmi='docker rmi'
+alias dps='docker ps'
+alias db='docker build'
+alias dr='docker run'
+alias dst='docker stop'
+alias drm='docker rm'
+alias da='docker attach'
+alias dlg='docker logs'
+alias dv='docker volume'
+
+dsh() {
+    docker exec -it $1 '/bin/sh'
+}
+
+# Tmux
+alias tm="tmux"
+alias tma="tmux attach-session"
+alias tml="tmux list-sessions"
+alias tmk="tmux kill-session"
 
 # Compiles and executes C file and removes binary
 # $1 path to the C file
