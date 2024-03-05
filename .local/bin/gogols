@@ -1,17 +1,20 @@
 #!/usr/bin/python3
+import sys
 import requests
 from bs4 import BeautifulSoup
 
-base_url = "https://gogoanime.cl"
+page_index = sys.argv[1] if len(sys.argv) > 1 else 1
+base_url = "https://anitaku.to"
+cdn_url = f"https://ajax.gogocdn.net/ajax/page-recent-release.html?page={page_index}&type=1"
 
 def main():
-    response = requests.get(base_url, timeout=4)
+    response = requests.get(cdn_url, timeout=4)
     if response.status_code != 200:
-        print(f"Failed to fetch from {base_url}")
+        print(f"Failed to fetch from {cdn_url}")
         return
 
     soup = BeautifulSoup(response.text, features="html.parser")
-    releases_element = soup.find_all(id="load_recent_release")
+    releases_element = soup.find_all(class_="last_episodes loaddub")
     if len(releases_element) == 0:
         print("Failed to find releases")
         return
