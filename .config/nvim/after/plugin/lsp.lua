@@ -1,12 +1,5 @@
 local lsp = require('lsp-zero')
 
-lsp.ensure_installed({
-    'tsserver',
-    'eslint',
-    'angularls',
-    'jsonls',
-})
-
 lsp.preset('recommended')
 
 lsp.on_attach(function(client, bufnr)
