@@ -14,10 +14,6 @@ _comp_options+=(globdots)  # Include hidden files.
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE="${XDG_STATE_HOME}/zsh_history"
-LESSHISTFILE="${XDG_STATE_HOME}/lesshst"
-NODE_REPL_HISTORY="${XDG_STATE_HOME}/node_repl_history"
-MARIADB_HISTFILE="${XDG_STATE_HOME}/mariadb_history"
-SQLITE_HISTORY="${XDG_STATE_HOME}/sqlite_history"
 
 # Vim-like key-bindings
 set -o vi
