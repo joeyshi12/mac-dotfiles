@@ -11,12 +11,13 @@ zmodload zsh/complist
 compinit -d "${HOME}/.cache/zsh/zcompdump-${ZSH_VERSION}"
 _comp_options+=(globdots)  # Include hidden files.
 
-# History files in cache
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE="${XDG_CACHE_HOME}/zsh_history"
-NODE_REPL_HISTORY="${XDG_CACHE_HOME}/node_repl_history"
-SQLITE_HISTORY="${XDG_CACHE_HOME}/sqlite_history"
+HISTFILE="${XDG_STATE_HOME}/zsh_history"
+LESSHISTFILE="${XDG_STATE_HOME}/lesshst"
+NODE_REPL_HISTORY="${XDG_STATE_HOME}/node_repl_history"
+MARIADB_HISTFILE="${XDG_STATE_HOME}/mariadb_history"
+SQLITE_HISTORY="${XDG_STATE_HOME}/sqlite_history"
 
 # Vim-like key-bindings
 set -o vi
