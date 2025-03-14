@@ -23,3 +23,9 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = 'yes'
 
 vim.opt.updatetime = 50
+
+function tabw(width)
+    vim.opt.tabstop = width
+    vim.opt.softtabstop = width
+    vim.opt.shiftwidth = width
+end

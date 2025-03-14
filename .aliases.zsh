@@ -2,7 +2,7 @@ alias ls="ls -G"
 alias grep="grep --color=auto"
 alias v="nvim"
 alias sv="sudo -E nvim"
-alias m="neomutt"
+alias ff="fastfetch"
 
 # Git
 alias ga="git add"
@@ -26,13 +26,16 @@ alias glg="git log --graph"
 
 # Docker
 alias dc='docker-compose'
-alias dim='docker image'
-alias drmi='docker rmi'
+alias di='docker image'
+alias dirm='docker image rm'
 alias dps='docker ps'
 alias db='docker build'
 alias dr='docker run'
 alias dst='docker stop'
+alias dstp='docker stop'
+alias dstpa='docker stop $(docker ps -q)'
 alias drm='docker rm'
+alias drma='docker rm $(docker ps -q)'
 alias da='docker attach'
 alias dlg='docker logs'
 alias dv='docker volume'
