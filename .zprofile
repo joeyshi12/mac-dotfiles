@@ -22,3 +22,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 PATH="/opt/homebrew/opt/openjdk@17/bin:${PATH}"
 PATH="/opt/homebrew/opt/binutils/bin:${PATH}"
 PATH="${HOME}/.local/bin:${PATH}"
+
+. "$HOME/.cargo/env"
