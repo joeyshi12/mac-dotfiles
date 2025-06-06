@@ -8,4 +8,4 @@ __pycache__/
 plugged/
 
 # tmux plugins
-plugins/
+tmux/plugins/
