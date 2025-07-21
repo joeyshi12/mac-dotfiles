@@ -23,6 +23,7 @@ alias gst="git status"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias glg="git log --graph"
+alias gr="git remote"
 
 # Docker
 alias dc='docker-compose'
@@ -39,6 +40,7 @@ alias drma='docker rm $(docker ps -q)'
 alias da='docker attach'
 alias dlg='docker logs'
 alias dv='docker volume'
+alias dpu='docker pull'
 
 dsh() {
     docker exec -it $1 '/bin/sh'
