@@ -22,6 +22,7 @@ return {
         vim.keymap.set({"i"}, "<C-K>", function() luasnip.expand() end, {silent = true})
         vim.keymap.set({"i", "s"}, "<C-L>", function() luasnip.jump( 1) end, {silent = true})
         vim.keymap.set({"i", "s"}, "<C-J>", function() luasnip.jump(-1) end, {silent = true})
+        vim.keymap.set({"n"}, "gl", function() vim.diagnostic.open_float() end)
 
         local cmp = require("cmp")
         cmp.setup({
