@@ -1,11 +1,2 @@
-# python
-__pycache__/
-*.pyc
-*.pyo
-.mypy_cache/
-
-# nvim plugins
-plugged/
-
 # tmux plugins
-**/tmux/plugins/
+/.config/tmux/plugins/
