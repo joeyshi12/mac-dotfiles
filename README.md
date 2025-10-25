@@ -6,25 +6,25 @@ Personal configuration files for managing a developer environment in MacOS.
 
 1. Install Apple's Command Line Tools, which are prerequisites for Git and Homebrew
 
-```bash
+```sh
 xcode-select --install
 ```
 
 2. Clone repo into hidden directory
 
-```bash
-git clone git@github.com:joeyshi12/mac-dotfiles ~/.dotfiles
+```sh
+git clone git@github.com:joeyshi12/macos-dotfiles ~/.dotfiles
 ```
 
 3. Create symlinks
 
-```bash
+```sh
 ~/.dotfiles/bootstrap.sh
 ```
 
 4. Install Homebrew, followed by the software list in the Brewfile
 
-```bash
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle --file ~/.dotfiles/Brewfile
 ```
