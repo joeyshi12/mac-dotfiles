@@ -1,11 +1,13 @@
-#!/bin/zsh
+#!/bin/sh
 
 DOTFILES="${HOME}/.dotfiles"
-cd "${DOTFILES}"
+mkdir -p "${HOME}/.config"
 
-[ ! -d "${HOME}/.config" ] && mkdir -p "${HOME}/.config"
-[ ! -d "${HOME}/.local/bin" ] && mkdir -p "${HOME}/.local/bin"
-
-for file in .config/* .local/bin/* .zshrc .zprofile; do
+pushd "${DOTFILES}"
+for file in .config/* .zshenv; do
     ln -sfn "${DOTFILES}/${file}" "${HOME}/${file}"
+    echo "Linked ${HOME}/${file}"
 done
+popd
+
+echo "Finished bootstrapping dotfiles"

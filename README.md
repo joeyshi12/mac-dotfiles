@@ -1,6 +1,6 @@
-# mac-dotfiles
+# macos-dotfiles
 
-Personal configuration files for managing a developer environment in MacOS
+Personal configuration files for managing a developer environment in MacOS.
 
 ## Installation
 
@@ -28,9 +28,3 @@ git clone git@github.com:joeyshi12/mac-dotfiles ~/.dotfiles
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle --file ~/.dotfiles/Brewfile
 ```
-
-## Notes
-
-- Export packages with `brew bundle dump --force`
-- [Nord ports](https://www.nordtheme.com/ports)
-- [Wallpaper](https://www.xfce-look.org/p/1904144)

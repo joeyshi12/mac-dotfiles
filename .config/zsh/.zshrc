@@ -24,13 +24,9 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
-source ~/.dotfiles/.p10k.zsh  # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source ~/.dotfiles/.aliases.zsh
-source ~/.dotfiles/.fzf.zsh
+source ${XDG_CONFIG_HOME}/zsh/p10k.zsh  # To customize prompt, run `p10k configure` or edit ~/p10k.zsh.
+source ${XDG_CONFIG_HOME}/zsh/aliases.zsh
+source ${XDG_CONFIG_HOME}/zsh/fzf.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-
-export NVM_DIR="${XDG_DATA_HOME}/nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
